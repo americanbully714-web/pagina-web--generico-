@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ORO & ACERO — Barbería de autor</title>
+<meta name="description" content="Barbería de autor para hombres. Corte a medida, afeitado clásico y ritual de grooming. Reservá tu silla en 40 segundos.">
+<meta property="og:title" content="ORO & ACERO — Barbería de autor">
+<meta property="og:description" content="Corte a medida, afeitado clásico y ritual de grooming. Reservá tu silla.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💈</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="grain"></div>
+
+<!-- ===== NAV ===== -->
+<nav id="nav">
+  <a class="brand" href="#top">
+    <span class="brand-mark">O&amp;A</span>
+    <span class="brand-txt">ORO &amp; ACERO</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#barberos">Barberos</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#opiniones">Opiniones</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a class="btn btn-sm" href="#contacto">Reservar silla</a>
+</nav>
+
+<!-- ===== HERO 3D ===== -->
+<header id="top">
+  <canvas id="scene"></canvas>
+  <div class="hero-fallback" id="heroFallback" aria-hidden="true"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-rv>Barbería de autor · Desde 2009</p>
+      <h1 class="hero-title">
+        <span class="line" data-rv><span class="w">NO</span> <span class="w">TE</span> <span class="w">CORTAN</span></span>
+        <span class="line" data-rv><span class="w gold">EL</span> <span class="w gold">CABELLO</span></span>
+        <span class="line" data-rv><span class="w">TE</span> <span class="w gold">CONOCEN</span></span>
+      </h1>
+      <p class="lead" data-rv>Corte a medida con técnica japonesa, afeitado a navaja caliente y un ritual de grooming que dura más que tu próxima cita.</p>
+      <div class="hero-cta" data-rv>
+        <a class="btn btn-lg" href="#contacto">Reservar mi silla</a>
+        <a class="btn btn-lg ghost" href="#servicios">Ver servicios</a>
+      </div>
+      <dl class="hero-stats" data-rv>
+        <div><dt>15</dt><dd>años en pie</dd></div>
+        <div><dt>9.4</dt><dd>valoración media</dd></div>
+        <div><dt>40s</dt><dd>para reservar</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="scroll-cue" aria-hidden="true"><span></span>Deslizá</div>
+</header>
+
+<!-- ===== SERVICIOS ===== -->
+<section id="servicios" class="sec">
+  <div class="wrap">
+    <header class="sec-head" data-rv>
+      <p class="kicker">01 — Servicios</p>
+      <h2>La carta</h2>
+      <p class="sec-sub">Precios claros. Sin sorpresas en la silla.</p>
+    </header>
+    <div class="serv-grid" id="servGrid"></div>
+  </div>
+</section>
+
+<!-- ===== BARBEROS ===== -->
+<section id="barberos" class="sec sec-alt">
+  <div class="wrap">
+    <header class="sec-head" data-rv>
+      <p class="kicker">02 — El equipo</p>
+      <h2>Tres manos, un mismo estándar</h2>
+      <p class="sec-sub">Cada barbero tiene su speciality. Vos elegís la silla.</p>
+    </header>
+    <div class="team" id="team"></div>
+  </div>
+</section>
+
+<!-- ===== GALERÍA ===== -->
+<section id="galeria" class="sec">
+  <div class="wrap">
+    <header class="sec-head" data-rv>
+      <p class="kicker">03 — Trabajo</p>
+      <h2>El antes y el después no miente</h2>
+      <p class="sec-sub">Cortes reales de la silla, sin filtros.</p>
+    </header>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<!-- ===== PROCESO ===== -->
+<section id="proceso" class="sec sec-alt">
+  <div class="wrap">
+    <header class="sec-head" data-rv>
+      <p class="kicker">04 — El ritual</p>
+      <h2>Cuatro pasos, cero prisa</h2>
+    </header>
+    <ol class="steps" id="steps"></ol>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIOS ===== -->
+<section id="opiniones" class="sec">
+  <div class="wrap">
+    <header class="sec-head" data-rv>
+      <p class="kicker">05 — Opiniones</p>
+      <h2>Lo que dicen al salir</h2>
+    </header>
+    <div class="quotes" id="quotes"></div>
+  </div>
+</section>
+
+<!-- ===== CTA + CONTACTO ===== -->
+<section id="contacto" class="sec contact">
+  <div class="wrap contact-grid">
+    <div class="contact-copy">
+      <p class="kicker" data-rv>06 — Reservas</p>
+      <h2 data-rv>Tu silla te espera</h2>
+      <p class="sec-sub" data-rv>Abrimos de martes a domingo. Las reservas online se confirman en menos de una hora.</p>
+      <ul class="contact-list" data-rv>
+        <li><span>Dirección</span> Calle del Oro 42, bajo, Madrid</li>
+        <li><span>Horario</span> Mar–Dom · 10:00 – 21:00</li>
+        <li><span>Teléfono</span> +34 910 000 000</li>
+        <li><span>Email</span> hola@oroyacero.com</li>
+      </ul>
+      <a class="btn btn-lg" href="https://wa.me/34910000000" data-rv>Escribir por WhatsApp</a>
+    </div>
+    <form class="card-form" id="formReserva" novalidate data-rv>
+      <h3>Reservar en 40 segundos</h3>
+      <label for="f-nombre">Nombre</label>
+      <input id="f-nombre" name="nombre" type="text" autocomplete="name" required placeholder="Tu nombre">
+      <label for="f-servicio">Servicio</label>
+      <select id="f-servicio" name="servicio" required>
+        <option value="">Elegí un servicio</option>
+      </select>
+      <label for="f-fecha">Día</label>
+      <input id="f-fecha" name="fecha" type="date" required>
+      <label for="f-hora">Hora</label>
+      <select id="f-hora" name="hora" required>
+        <option value="">Elegí una hora</option>
+        <option>10:00</option><option>11:30</option><option>13:00</option>
+        <option>16:30</option><option>18:00</option><option>19:30</option>
+      </select>
+      <label for="f-notas">Nota para el barbero <em>(opcional)</em></label>
+      <textarea id="f-notas" name="notas" rows="3" placeholder="Ej: degradado bajo, barba corta"></textarea>
+      <button class="btn btn-lg full" type="submit">Confirmar reserva</button>
+      <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>© 2026 ORO &amp; ACERO · Barbería de autor</p>
+    <nav class="foot-links">
+      <a href="#top">Arriba</a><a href="https://wa.me/34910000000">WhatsApp</a><a href="#contacto">Reservar</a>
+    </nav>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
